@@ -83,7 +83,7 @@
  *                        second parameter is the total number of images originally requested to be prefetched
  * @param completionBlock block to be called when prefetching is completed
  */
-- (void)prefetchURLs:(NSArray *)urls progress:(void (^)(NSUInteger, NSUInteger))progressBlock completed:(void (^)(NSUInteger, NSUInteger))completionBlock;
+- (void)prefetchURLs:(NSArray *)urls progress:(void (^)(NSUInteger, NSUInteger,BOOL))progressBlock completed:(void (^)(NSUInteger, NSUInteger))completionBlock;
 
 /**
  * Remove and cancel queued list
